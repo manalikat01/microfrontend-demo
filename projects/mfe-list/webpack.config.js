@@ -12,7 +12,7 @@ sharedMappings.register(
 
 module.exports = {
   output: {
-    uniqueName: "mfeBasket",
+    uniqueName: "mfeList",
     publicPath: "auto"
   },
   optimization: {
@@ -31,10 +31,10 @@ module.exports = {
         library: { type: "module" },
 
         // For remotes (please adjust)
-        name: "mfeBasket",
+        name: "mfeList",
         filename: "remoteEntry.js",
         exposes: {
-          './Module': './projects/mfe-basket/src/app/basket/basket.module.ts',
+          './Module': './projects/mfe-list/src/app/basket/basket.module.ts',
         },
         
         // For hosts (please adjust)

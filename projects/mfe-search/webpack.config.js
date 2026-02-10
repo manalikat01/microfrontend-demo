@@ -12,7 +12,7 @@ sharedMappings.register(
 
 module.exports = {
   output: {
-    uniqueName: "shell",
+    uniqueName: "mfeSearch",
     publicPath: "auto"
   },
   optimization: {
@@ -31,16 +31,17 @@ module.exports = {
         library: { type: "module" },
 
         // For remotes (please adjust)
-        // name: "shell",
-        // filename: "remoteEntry.js",
-        // exposes: {
-        //     './Component': './projects/shell/src/app/app.component.ts',
-        // },        
+        name: "mfeSearch",
+        filename: "remoteEntry.js",
+        exposes: {
+          './Module': './projects/mfe-basket/src/app/basket/basket.module.ts',
+        },
         
         // For hosts (please adjust)
-        remotes: {
-          "mfeSearch": "http://localhost:4201/remoteEntry.js",
-        },
+        // remotes: {
+        //     "shell": "http://localhost:4200/remoteEntry.js",
+
+        // },
 
         shared: share({
           "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 

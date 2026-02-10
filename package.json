@@ -1,5 +1,5 @@
 {
-  "name": "okta-angular-microfrontend-example",
+  "name": "angular-microfrontend-example",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",

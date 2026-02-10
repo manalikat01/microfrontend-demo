@@ -1,1 +1,1 @@
-declare module 'mfeBasket/Module';
+declare module 'mfeSearch/Module';

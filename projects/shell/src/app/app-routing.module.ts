@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
-  { path: '', component: ProductsComponent },
-  { path: 'basket', loadChildren: () => import('mfeBasket/Module').then(m => m.BasketModule) }
+  // { path: '', component: ProductsComponent },
+  // { path: 'basket', loadChildren: () => import('mfeSearch/Module').then(m => m.BasketModule) }
 ];
 
 @NgModule({

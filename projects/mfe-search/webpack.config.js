@@ -34,7 +34,6 @@ module.exports = {
         name: "mfeSearch",
         filename: "remoteEntry.js",
         exposes: {
-          './Module': './projects/mfe-basket/src/app/basket/basket.module.ts',
         },
         
         // For hosts (please adjust)

@@ -60,4 +60,8 @@ export class ProductsService {
       }
     ]
   }
+
+  public getProductById(name: string) {
+    return this.getProducts().filter(p => p.name.toLocaleLowerCase().includes(name.toLocaleLowerCase()));
+  }
 }

@@ -6,11 +6,5 @@ import { Component } from '@angular/core';
   styles: []
 })
 export class AppComponent {
-  searchText: string = '';
-  constructor() { }
-  onSearchChange(e: any): void {
-    this.searchText = e;
-    console.log("Search in Shell: ", e);
-  }
+  title = 'mfe-basket';
 }
-
